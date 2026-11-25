@@ -1,0 +1,38 @@
+{
+  "name": "@pinxin/client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/sync-company-colors.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/sync-company-colors.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "node scripts/test-client.mjs",
+    "check": "node scripts/check-client.mjs && node scripts/check-vue-identifiers.mjs"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "2.3.2",
+    "@lucide/vue": "1.56.0",
+    "cnchar": "3.2.6",
+    "cnchar-input": "3.2.6",
+    "cnchar-poly": "3.2.6",
+    "cnchar-words": "3.2.6",
+    "element-plus": "2.14.7",
+    "lucide-vue-next": "1.0.0",
+    "pinia": "4.0.3",
+    "qrcode": "1.5.4",
+    "vue": "3.5.44"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "3.5.44",
+    "@types/node": "24.19.1",
+    "@vitejs/plugin-vue": "6.0.10",
+    "autoprefixer": "10.6.1",
+    "postcss": "8.5.29",
+    "tailwindcss": "3.4.19",
+    "typescript": "6.0.3",
+    "vite": "8.3.3"
+  }
+}

@@ -1,0 +1,230 @@
+/* Company foundations. Management UI only; native scene artwork keeps its own system. */
+body[data-portal="client"]:not(:where([data-scene-presentation], [data-scene-presentation] *)), .duozuhu-client:not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  --client-primary: var(--color-text-brand-1);
+  --client-border: var(--color-border-2);
+  --client-text: var(--color-text-neutral-1);
+  --client-secondary-text: var(--color-text-neutral-2);
+  --client-radius: 6px;
+  --el-font-family: var(--font-family-pingfang);
+  --el-color-primary: var(--color-brand-6);
+  --el-color-primary-light-3: var(--color-brand-5);
+  --el-color-primary-light-5: var(--color-brand-4);
+  --el-color-primary-light-7: var(--color-brand-3);
+  --el-color-primary-light-8: var(--color-brand-2);
+  --el-color-primary-light-9: var(--color-brand-1);
+  --el-color-primary-dark-2: var(--color-brand-7);
+  --el-color-info: var(--color-grey-5);
+  --el-color-info-light-3: var(--color-grey-6);
+  --el-color-info-light-5: var(--color-grey-7);
+  --el-color-info-light-7: var(--color-grey-8);
+  --el-color-info-light-8: var(--color-grey-9);
+  --el-color-info-light-9: var(--color-grey-10);
+  --el-color-info-dark-2: var(--color-grey-3);
+  --el-color-success-light-3: var(--color-success-5);
+  --el-color-success-light-5: var(--color-success-4);
+  --el-color-success-light-7: var(--color-success-3);
+  --el-color-success-light-8: var(--color-success-2);
+  --el-color-success-light-9: var(--color-success-1);
+  --el-color-success-dark-2: var(--color-success-7);
+  --el-color-warning-light-3: var(--color-warning-5);
+  --el-color-warning-light-5: var(--color-warning-4);
+  --el-color-warning-light-7: var(--color-warning-3);
+  --el-color-warning-light-8: var(--color-warning-2);
+  --el-color-warning-light-9: var(--color-warning-1);
+  --el-color-warning-dark-2: var(--color-warning-7);
+  --el-color-danger-light-3: var(--color-danger-5);
+  --el-color-danger-light-5: var(--color-danger-4);
+  --el-color-danger-light-7: var(--color-danger-3);
+  --el-color-danger-light-8: var(--color-danger-2);
+  --el-color-danger-light-9: var(--color-danger-1);
+  --el-color-danger-dark-2: var(--color-danger-7);
+  --el-text-color-primary: var(--color-text-neutral-1);
+  --el-text-color-regular: var(--color-text-neutral-2);
+  --el-text-color-secondary: var(--color-text-neutral-3);
+  --el-text-color-placeholder: var(--color-text-neutral-3);
+  --el-text-color-disabled: var(--color-text-neutral-4);
+  --el-border-color: var(--color-border-3);
+  --el-border-color-light: var(--color-border-2);
+  --el-border-color-lighter: var(--color-border-1);
+  --el-border-color-extra-light: var(--color-border-1);
+  --el-fill-color: var(--color-fill-neutral-2);
+  --el-fill-color-light: var(--color-fill-neutral-1);
+  --el-fill-color-lighter: var(--color-fill-neutral-1);
+  --el-fill-color-blank: var(--color-fill-neutral-6);
+  --el-bg-color: var(--color-bg-2);
+  --el-bg-color-page: var(--color-bg-1);
+  --el-bg-color-overlay: var(--color-bg-5);
+  --el-disabled-bg-color: var(--color-fill-neutral-2);
+  --el-disabled-border-color: var(--color-border-2);
+  --el-disabled-text-color: var(--color-text-neutral-4);
+  --el-border-radius-base: 6px;
+  --el-border-radius-small: 4px;
+  --el-font-size-base: 14px;
+  --el-font-size-small: 12px;
+  --el-font-size-large: 20px;
+  --el-component-size: 32px;
+  --el-component-size-large: 40px;
+  --el-component-size-small: 28px;
+  --el-mask-color: var(--color-fill-neutral-mask);
+  --el-mask-color-extra-light: var(--color-fill-neutral-mask);
+}
+
+.duozuhu-client:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--client-text); line-height: 20px; background: var(--color-bg-1); }
+.duozuhu-client > header:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-neutral-1); }
+.duozuhu-client > div > aside:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-neutral-2); }
+.duozuhu-client aside button:not(:where([data-scene-presentation], [data-scene-presentation] *)), .duozuhu-client nav button:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-weight: 500; line-height: 20px; }
+.duozuhu-client .client-settings-list:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+.duozuhu-client .client-settings-list > :first-child > span:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 20px; line-height: 28px; font-weight: 500; }
+.duozuhu-client .client-settings-layout > div:last-child > .h-12:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 64px; }
+.duozuhu-client .client-settings-layout > div:last-child > .h-12 > span:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 20px; line-height: 28px; font-weight: 500; }
+
+/* Normal / large / small all include the border in their outer height. */
+body[data-portal="client"] .el-button:not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  --el-button-font-weight: 400;
+  --el-button-text-color: var(--color-text-neutral-1);
+  --el-button-bg-color: var(--color-fill-neutral-2);
+  --el-button-border-color: transparent;
+  --el-button-hover-text-color: var(--color-text-neutral-1);
+  --el-button-hover-bg-color: var(--color-fill-neutral-3);
+  --el-button-hover-border-color: transparent;
+  --el-button-active-text-color: var(--color-text-neutral-1);
+  --el-button-active-bg-color: var(--color-fill-neutral-4);
+  --el-button-active-border-color: transparent;
+  height: 32px; min-height: 32px; padding: 6px 16px; border: 0;
+  border-radius: 6px; font-size: 14px; line-height: 20px; font-weight: 400;
+  box-sizing: border-box;
+}
+body[data-portal="client"] .el-button > span:not(:where([data-scene-presentation], [data-scene-presentation] *)) { line-height: inherit; }
+body[data-portal="client"] .el-button--large:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 40px; min-height: 40px; padding: 8px 20px; font-size: 16px; line-height: 24px; }
+body[data-portal="client"] .el-button--small:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 28px; min-height: 28px; padding: 4px 8px; font-size: 14px; border-radius: 4px; }
+body[data-portal="client"] .el-button.is-round:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 999px; }
+body[data-portal="client"] .el-button.is-circle:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 32px; padding: 0; border-radius: 50%; }
+body[data-portal="client"] .el-button--large.is-circle:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 40px; }
+body[data-portal="client"] .el-button--small.is-circle:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 28px; }
+body[data-portal="client"] .el-button--primary:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-button--danger:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-button--success:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-button--warning:not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  --el-button-text-color: var(--color-text-neutral-5);
+  --el-button-bg-color: var(--el-color-primary);
+  --el-button-hover-text-color: var(--color-text-neutral-5);
+  --el-button-hover-bg-color: var(--el-color-primary-light-3);
+  --el-button-active-text-color: var(--color-text-neutral-5);
+  --el-button-active-bg-color: var(--el-color-primary-dark-2);
+}
+body[data-portal="client"] .el-button--danger:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-button-bg-color: var(--color-fill-danger-1); --el-button-hover-bg-color: var(--color-fill-danger-2); --el-button-active-bg-color: var(--color-fill-danger-3); }
+body[data-portal="client"] .el-button--success:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-button-bg-color: var(--color-fill-success-1); --el-button-hover-bg-color: var(--color-fill-success-2); --el-button-active-bg-color: var(--color-fill-success-3); }
+body[data-portal="client"] .el-button--warning:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-button-bg-color: var(--color-fill-warning-1); --el-button-hover-bg-color: var(--color-fill-warning-2); --el-button-active-bg-color: var(--color-fill-warning-3); }
+body[data-portal="client"] .el-button.is-plain:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: transparent; color: var(--el-button-bg-color); box-shadow: inset 0 0 0 1px currentColor; }
+body[data-portal="client"] .el-button.is-plain:not(.el-button--primary,.el-button--danger,.el-button--success,.el-button--warning):not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-neutral-1); box-shadow: inset 0 0 0 1px var(--color-border-3); }
+body[data-portal="client"] .el-button.is-plain:not(:disabled):hover:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-brand-2); background: transparent; box-shadow: inset 0 0 0 1px currentColor; }
+body[data-portal="client"] .el-button.is-plain:not(:disabled):active:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-brand-3); }
+body[data-portal="client"] .el-button:is(.is-link,.is-text):not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: transparent; color: var(--color-text-brand-1); box-shadow: none; }
+body[data-portal="client"] .el-button:is(.is-link,.is-text):not(:disabled):hover:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-brand-2); background: transparent; }
+body[data-portal="client"] .el-button:is(.is-link,.is-text):not(:disabled):active:not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-brand-3); }
+body[data-portal="client"] .el-button--danger:is(.is-link,.is-text):not(:where([data-scene-presentation], [data-scene-presentation] *)) { color: var(--color-text-danger-1); }
+body[data-portal="client"] .el-button:is(:disabled,.is-disabled,.is-disabled:hover,.is-disabled:active):not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  color: var(--color-text-neutral-4); background: var(--color-fill-neutral-2);
+  box-shadow: inset 0 0 0 1px var(--color-border-2); opacity: 1; cursor: not-allowed;
+}
+body[data-portal="client"] .el-button:is(.is-link,.is-text):is(:disabled,.is-disabled):not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: transparent; box-shadow: none; }
+body[data-portal="client"] .el-button:focus-visible:not(:where([data-scene-presentation], [data-scene-presentation] *)) { outline: 2px solid var(--color-border-5); outline-offset: 2px; }
+
+/* Input state uses a single inset 1px border, never an extra focus halo. */
+body[data-portal="client"] :is(.el-input,.el-select,.el-textarea,.el-date-editor,.el-input-number):not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; line-height: 20px; --el-input-border-radius: 6px; }
+body[data-portal="client"] .el-input:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-input-height: 32px; }
+body[data-portal="client"] .el-input--large:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-input-height: 40px; font-size: 16px; }
+body[data-portal="client"] .el-input--small:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-input-height: 28px; }
+body[data-portal="client"] :is(.el-input__wrapper,.el-select__wrapper):not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  border: 0; border-radius: 6px; background: var(--color-fill-neutral-1);
+  box-shadow: inset 0 0 0 1px var(--color-border-3); padding-inline: 12px;
+  min-height: 32px; box-sizing: border-box;
+}
+body[data-portal="client"] .el-input__wrapper:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: var(--el-input-height); }
+body[data-portal="client"] .el-input__inner:not(:where([data-scene-presentation], [data-scene-presentation] *)) { line-height: 20px; }
+body[data-portal="client"] .el-select__wrapper:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding-block: 6px; line-height: 20px; }
+body[data-portal="client"] .el-select__wrapper.is-small:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 28px; padding-block: 4px; }
+body[data-portal="client"] .el-select__wrapper.is-large:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 40px; padding-block: 8px; font-size: 16px; }
+body[data-portal="client"] :is(.el-input__wrapper,.el-select__wrapper):hover:not(:where([data-scene-presentation], [data-scene-presentation] *)) { box-shadow: inset 0 0 0 1px var(--color-border-4); }
+body[data-portal="client"] :is(.el-input__wrapper,.el-select__wrapper):is(.is-focus,.is-focused):not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-neutral-6); box-shadow: inset 0 0 0 1px var(--color-border-5); }
+body[data-portal="client"] .el-input.is-disabled .el-input__wrapper:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-select__wrapper.is-disabled:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-neutral-2); box-shadow: inset 0 0 0 1px var(--color-border-2); }
+body[data-portal="client"] .el-textarea__inner:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 12px; font-size: 14px; line-height: 20px; border-radius: 6px; background: var(--color-fill-neutral-1); box-shadow: inset 0 0 0 1px var(--color-border-3); }
+body[data-portal="client"] .el-textarea__inner:hover:not(:where([data-scene-presentation], [data-scene-presentation] *)) { box-shadow: inset 0 0 0 1px var(--color-border-4); }
+body[data-portal="client"] .el-textarea__inner:focus:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-neutral-6); box-shadow: inset 0 0 0 1px var(--color-border-5); }
+body[data-portal="client"] .el-textarea.is-disabled .el-textarea__inner:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-neutral-2); box-shadow: inset 0 0 0 1px var(--color-border-2); }
+body[data-portal="client"] .el-form-item.is-error :is(.el-input__wrapper,.el-select__wrapper,.el-textarea__inner):not(:where([data-scene-presentation], [data-scene-presentation] *)) { box-shadow: inset 0 0 0 1px var(--color-border-7); }
+body[data-portal="client"] .el-form-item:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-bottom: 16px; }
+body[data-portal="client"] .el-form-item__label:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; line-height: 32px; }
+body[data-portal="client"] .el-form-item__error:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding-top: 4px; font-size: 12px; line-height: 16px; }
+body[data-portal="client"] .el-form--label-top .el-form-item__label:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-bottom: 8px; line-height: 20px; }
+
+body[data-portal="client"] .el-radio-button__inner:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 6px 16px; font-size: 14px; line-height: 20px; font-weight: 400; }
+body[data-portal="client"] .el-radio-button--small .el-radio-button__inner:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 4px 8px; }
+body[data-portal="client"] .el-radio-button__original-radio:checked + .el-radio-button__inner:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-brand-1); }
+body[data-portal="client"] :is(.el-checkbox__inner,.el-radio__inner):not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 16px; height: 16px; }
+body[data-portal="client"] :is(.el-checkbox__label,.el-radio__label):not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding-left: 8px; font-size: 14px; line-height: 20px; }
+body[data-portal="client"] .el-checkbox__inner:not(:where([data-scene-presentation], [data-scene-presentation] *))::after { left: 5px; top: 2px; }
+body[data-portal="client"] .el-switch:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-switch-height: 24px; --el-switch-button-size: 20px; --el-switch-width: 40px; }
+body[data-portal="client"] .el-slider:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-slider-height: 4px; --el-slider-button-size: 16px; }
+body[data-portal="client"] .el-tag:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 12px; line-height: 16px; border-radius: 4px; }
+body[data-portal="client"] .el-tag--small:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 24px; padding: 4px 8px; border: 0; }
+body[data-portal="client"] .el-select-dropdown__item:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 32px; height: auto; line-height: 20px; padding: 6px 24px 6px 12px; font-size: 14px; }
+body[data-portal="client"] .el-dropdown-menu__item:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 32px; padding: 6px 12px; font-size: 14px; line-height: 20px; }
+body[data-portal="client"] .el-tabs__item:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 40px; font-size: 14px; line-height: 20px; font-weight: 500; }
+
+/* Shared containers, keeping editor stage and native scene elements out of this rule. */
+.duozuhu-client .company-card:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-persona-form:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-control-content > div:not(.client-return-content-row):not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .device-identity-grid .device-current-section:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; border-radius: 8px; border-color: var(--color-border-2); }
+.duozuhu-client .device-top-notice:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 6px; }
+.duozuhu-client .device-top-actions .el-button--small:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 4px 8px; font-size: 14px; font-weight: 400; }
+.duozuhu-client .device-top-actions .el-button:not(.el-button--small):not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 32px; padding: 6px 16px; font-size: 14px; font-weight: 400; }
+.duozuhu-client .device-top-buttons:not(:where([data-scene-presentation], [data-scene-presentation] *)) { gap: 24px; }
+.duozuhu-client .client-device-settings-panel .client-device-config-content > *:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-device-settings-panel .client-control-content > *:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-block: 0 !important; }
+.duozuhu-client .client-device-settings-panel .client-control-content > * > *:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-top: 0; }
+.duozuhu-client .device-current-section h3:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-control-content > div > div:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 20px; line-height: 28px; font-weight: 500; }
+.duozuhu-client .device-current-section p:not(:where([data-scene-presentation], [data-scene-presentation] *)) { line-height: 16px; }
+.duozuhu-client .device-mode-option:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 8px; }
+.duozuhu-client .client-persona-form textarea:not(:where([data-scene-presentation], [data-scene-presentation] *)) { line-height: 20px; }
+.duozuhu-client .client-greetings-tabs > span:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 12px; line-height: 16px; }
+.duozuhu-client table th:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-neutral-2); font-weight: 500; }
+.duozuhu-client table :is(th,td):not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 48px; line-height: 20px; padding: 12px 16px; border-color: var(--color-border-2); }
+.duozuhu-client table tbody tr:hover:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-fill-neutral-1); }
+.duozuhu-client .el-pagination:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-pagination-button-height: 32px; --el-pagination-button-width: 32px; font-size: 14px; }
+body[data-portal="client"] .el-card:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-card-padding: 24px; border-radius: 8px; border-color: var(--color-border-2); }
+body[data-portal="client"] .el-card__header:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; font-size: 20px; line-height: 28px; font-weight: 500; }
+
+/* Teleported overlays use the same company tokens. Fixed modal sizes remain intact. */
+body[data-portal="client"]:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --client-dialog-width: min(520px, calc(100vw - 48px)); }
+body[data-portal="client"] :is(.el-dialog,.el-message-box):not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 16px; --el-dialog-padding-primary: 24px; --el-dialog-title-font-size: 20px; --el-dialog-border-radius: 16px; }
+body[data-portal="client"] :is(.el-dialog__header,.el-message-box__header):not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; border-color: var(--color-border-2); }
+body[data-portal="client"] :is(.el-dialog__title,.el-message-box__title):not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 20px; line-height: 28px; font-weight: 500; color: var(--color-text-neutral-1); }
+body[data-portal="client"] :is(.el-dialog__body,.el-message-box__content):not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; color: var(--color-text-neutral-2); line-height: 20px; }
+body[data-portal="client"] :is(.el-dialog__footer,.el-message-box__btns):not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; min-height: 81px; border-color: var(--color-border-2); }
+body[data-portal="client"] .el-dialog__headerbtn:not(:where([data-scene-presentation], [data-scene-presentation] *)) { top: 24px; right: 24px; width: 28px; height: 28px; }
+body[data-portal="client"] .el-message-box__headerbtn:not(:where([data-scene-presentation], [data-scene-presentation] *)) { top: 24px; right: 24px; width: 28px; height: 28px; }
+body[data-portal="client"] .el-overlay:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background-color: var(--color-fill-neutral-mask); }
+body[data-portal="client"] .client-device-selection-dialog .el-dialog__body:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 0; }
+body[data-portal="client"] .client-device-selection-dialog .el-dialog__footer:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; min-height: 81px; }
+body[data-portal="client"] .device-selection-preview:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .device-selection-options:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+body[data-portal="client"] :is(.device-persona-option,.device-voice-option):not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 8px; }
+body[data-portal="client"] .device-voice-option:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+body[data-portal="client"] .el-drawer:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-drawer-padding-primary: 24px; }
+body[data-portal="client"] .el-drawer__header:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-bottom: 0; padding: 24px; border-bottom: 1px solid var(--color-border-2); font-size: 20px; line-height: 28px; font-weight: 500; }
+body[data-portal="client"] .el-drawer__body:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+body[data-portal="client"] .el-drawer__footer:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+body[data-portal="client"] .el-message:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 12px 16px; font-size: 14px; }
+body[data-portal="client"] .el-notification:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; border-radius: 8px; }
+
+/* The scene settings form is management UI; its fitted samples keep screen typography. */
+.duozuhu-client .scene-visibility-header:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+.duozuhu-client .scene-settings-shell .scene-settings-content:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; }
+.duozuhu-client .scene-settings-content > section:not(.scene-selection-inspector):not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .scene-settings-content > .bg-white.border:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 8px; }
+.duozuhu-client .scene-editor-stage-header .el-button.stage-action-btn:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-radius: 6px !important; font-weight: 400; }
+.duozuhu-client .client-billing-usage h2:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 20px; line-height: 28px; font-weight: 500; }

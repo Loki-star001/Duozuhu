@@ -1,0 +1,16 @@
+{
+  "name": "pinxin-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/client"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @pinxin/client --",
+    "build": "npm run build --workspace @pinxin/client",
+    "preview": "npm run preview --workspace @pinxin/client --",
+    "test": "npm test --workspace @pinxin/client",
+    "check": "npm run check --workspace @pinxin/client"
+  }
+}

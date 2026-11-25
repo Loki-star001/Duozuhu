@@ -1,0 +1,103 @@
+/* Terminal presentation only. The management form retains Element Plus tokens. */
+.scene-editor-stage-header { display: flex; align-items: center; justify-content: space-between; padding: 0 0 10px; flex-shrink: 0; }
+.scene-editor-stage-header .el-button { margin-left: 0 !important; }
+.scene-editor-stage-header .el-button + .el-button { margin-left: 4px !important; }
+.scene-editor-stage-header .el-button.stage-action-btn {
+  height: 32px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+  line-height: 30px !important;
+  font-size: 14px !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 4px !important;
+}
+.scene-state-preview-controls { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px 12px; padding: 12px 0 0; flex-shrink: 0; }
+.scene-state-preview-controls .el-button { margin-left: 0 !important; height: 32px; }
+.scene-state-preview-controls .el-button + .el-button { margin-left: 0 !important; }
+.scene-screen-composed { container-type: inline-size; --screen-accent: #6678aa; --screen-ink: #35405b; --screen-glass: rgba(248,250,255,.83); }
+.scene-screen-composed .dialogue-bubble,
+.scene-screen-composed .scene-subtitle-content { border: 1px solid rgba(255,255,255,.62); background: var(--screen-glass); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 6px 20px rgba(63,78,111,.09), inset 0 1px 0 rgba(255,255,255,.7); color: var(--screen-ink); }
+.scene-screen-composed .scene-kingkong-rail {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.scene-screen-composed .scene-kingkong-pill,
+.scene-screen-composed .scene-kingkong-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(6px, 1.8cqw, 12px);
+  border-radius: clamp(14px, 3.5cqw, 22px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  gap: clamp(4px, 1.2cqw, 10px);
+}
+.scene-screen-composed .kk-card-icon,
+.scene-screen-composed .kk-pill-icon {
+  width: clamp(22px, 5cqw, 36px);
+  height: clamp(22px, 5cqw, 36px);
+  color: #165DFF;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scene-screen-composed .kk-card-label,
+.scene-screen-composed .kk-pill-label {
+  font-size: clamp(11px, 2.4cqw, 15px);
+  font-weight: 600;
+  color: #165DFF;
+  text-align: center;
+}
+.scene-screen-composed .kk-pill-icon { width: clamp(16px,4cqw,36px); height: clamp(16px,4cqw,36px); border-radius: 8px; background: rgba(111,131,182,.12); color: var(--screen-accent); }
+.scene-screen-composed .kk-pill-icon svg { width: clamp(14px,3cqw,22px); height: clamp(14px,3cqw,22px); }
+.scene-screen-composed .kk-pill-label { font-size: clamp(11px,2.6cqw,24px); font-weight: 500; letter-spacing: .02em; color: var(--screen-ink); }
+.scene-screen-composed .kk-pill-arrow { color: #8b98b5; width: clamp(8px,2cqw,14px); }
+.scene-screen-composed .scene-edit-element[aria-label="时间时区"] .scene-kingkong-pill { background: transparent; border-color: transparent; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; padding: 4px 6px; gap: 4px; }
+.scene-screen-composed .scene-edit-element[aria-label="时间时区"] .kk-pill-icon { background: transparent; width: 14px; }
+.scene-screen-composed .scene-edit-element[aria-label="时间时区"] .kk-pill-arrow { display: none; }
+.scene-screen-composed .scene-dialogue-content { padding: 0; justify-content: center; background: transparent; border: 0; border-radius: 0; box-shadow: none; overflow: hidden; width: 100%; height: 100%; }
+.scene-screen-composed .dialogue-bubble { padding: 14px 22px; border-radius: 26px; font-size: clamp(12px,2.8cqw,25px); line-height: 1.7; font-weight: 400; max-width: 100%; max-height: 100%; overflow-y: auto; }
+.scene-screen-composed .scene-dialogue-item { flex-shrink: 0; }
+.scene-screen-composed .scene-dialogue-item.ai { min-height: 0; flex-shrink: 1; }
+.scene-screen-composed .dialogue-bubble.user-bubble { background: linear-gradient(135deg, #165DFF 0%, #3875FF 100%); color: #fff; border-radius: 18px 18px 4px 18px; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 4px 14px rgba(22, 93, 255, 0.25); }
+.scene-screen-composed .dialogue-bubble.ai-bubble { background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(246, 249, 255, 0.52)); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 18px; border: 1px solid rgba(255, 255, 255, 0.75); box-shadow: 0 10px 32px rgba(35, 55, 83, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.85); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; min-height: 88px; padding: 18px 22px; display: flex; flex-direction: column; justify-content: center; }
+.scene-screen-composed .scene-subtitle-content { padding: clamp(6px,1.5cqw,12px) clamp(12px,3cqw,20px); border-radius: 12px; background: rgba(236,241,252,.72); }
+.scene-screen-composed .subtitle-text-content { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; color: var(--screen-ink); font-size: clamp(11px,2.5cqw,23px); line-height: 1.5; font-weight: 400; }
+.duozuhu-client .scene-settings-shell .scene-layer-actions .el-button { flex: 1 1 48px; padding: 0 4px; }
+@media (prefers-reduced-motion: reduce) { .scene-screen-composed * { transition: none !important; animation: none !important; } }
+
+/* All dimensions below are native scene pixels; only the whole artboard scales. */
+.scene-editor-canvas-frame { position:relative; flex-shrink:0; }
+.scene-editor-canvas-frame > .scene-edit-canvas { position:absolute; left:0; top:0; }
+.scene-screen-composed .subtitle-text-content { font-size:28px; }
+.scene-screen-composed .dialogue-bubble, .scene-screen-composed .dialogue-bubble > div { font-size:28px; }
+.scene-screen-composed .scene-edit-element.selected { outline-width:calc(2px * var(--scene-editor-inverse-scale,1)); outline-offset:calc(-2px * var(--scene-editor-inverse-scale,1)); }
+.scene-screen-composed .scene-element-label { transform:scale(var(--scene-editor-inverse-scale,1)); transform-origin:left bottom; bottom:calc(100% + 4px * var(--scene-editor-inverse-scale,1)); }
+.scene-screen-composed .scene-element-label.label-bottom { bottom:auto; top:calc(100% + 4px * var(--scene-editor-inverse-scale,1)); transform-origin:left top; }
+.scene-screen-composed .scene-resize-handle { width:calc(12px * var(--scene-editor-inverse-scale,1)); height:calc(12px * var(--scene-editor-inverse-scale,1)); border-width:calc(1px * var(--scene-editor-inverse-scale,1)); }
+
+.scene-screen-composed,.kiosk-screen,.scene-conversation-appearance {
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+  --scene-dialog-font-size:28px;
+  --scene-dialog-line-height:1.5;
+  --scene-dialog-letter-spacing:0.07em;
+  --scene-input-font-size:24px;
+  --scene-shortcut-font-size:20px;
+  --scene-icon-size:40px;
+  --scene-icon-small-size:40px;
+  --scene-control-glass-background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(246,249,255,.74));
+  --scene-control-glass-border:1.5px solid #fff;
+  --scene-control-glass-shadow:0 4px 16px rgba(35,55,83,.07),inset 0 1px 0 #fff;
+  --scene-control-glass-blur:14px;
+}

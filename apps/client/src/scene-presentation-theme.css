@@ -1,0 +1,61 @@
+/* Independent terminal presentation, shared by canvas, runtime and sidebar samples.
+   Management styles explicitly stop at data-scene-presentation boundaries.
+   --scene-* values remain owned by each component and saved scene configuration. */
+[data-scene-presentation] {
+  color: #1d2129;
+  font-size: 14px;
+  line-height: 1.5;
+  --client-primary: #165dff;
+  --client-border: #e5e6eb;
+  --client-text: #1d2129;
+  --client-secondary-text: #4e5969;
+  --client-radius: 4px;
+  --el-component-size: 32px;
+  --el-component-size-large: 40px;
+  --el-component-size-small: 24px;
+  --el-font-size-small: 12px;
+  --el-font-size-large: 18px;
+
+  --el-color-primary: #165dff;
+  --el-color-primary-light-3: #4080ff;
+  --el-color-primary-light-5: #94bfff;
+  --el-color-primary-light-7: #bedaff;
+  --el-color-primary-light-8: #dbe9ff;
+  --el-color-primary-light-9: #e8f3ff;
+  --el-color-primary-dark-2: #0e42d2;
+  --el-color-success: #00b42a;
+  --el-color-success-light-3: #4dcb6a;
+  --el-color-success-light-5: #80d995;
+  --el-color-success-light-7: #aff0b5;
+  --el-color-success-light-8: #d0f5d6;
+  --el-color-success-light-9: #e8ffea;
+  --el-color-success-dark-2: #009021;
+  --el-color-warning: #ff7d00;
+  --el-color-warning-light-3: #ffa44d;
+  --el-color-warning-light-5: #ffbe80;
+  --el-color-warning-light-7: #ffdca6;
+  --el-color-warning-light-8: #ffe8c4;
+  --el-color-warning-light-9: #fff7e8;
+  --el-color-warning-dark-2: #cc6400;
+  --el-color-danger: #f53f3f;
+  --el-color-danger-light-3: #f87979;
+  --el-color-danger-light-5: #fa9f9f;
+  --el-color-danger-light-7: #fbacac;
+  --el-color-danger-light-8: #fdd9d3;
+  --el-color-danger-light-9: #ffece8;
+  --el-color-danger-dark-2: #cb272d;
+  --el-color-error: var(--el-color-danger);
+  --el-text-color-primary: #1d2129;
+  --el-text-color-regular: #4e5969;
+  --el-text-color-secondary: #86909c;
+  --el-text-color-placeholder: #86909c;
+  --el-text-color-disabled: #c9cdd4;
+  --el-border-color: #e5e6eb;
+  --el-border-color-light: #e5e6eb;
+  --el-border-color-lighter: #f2f3f5;
+  --el-fill-color-light: #f7f8fa;
+  --el-fill-color-lighter: #fafafb;
+  --el-fill-color-blank: #fff;
+  --el-border-radius-base: 4px;
+  --el-font-size-base: 14px;
+}

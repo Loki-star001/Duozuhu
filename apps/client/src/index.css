@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family-pingfang: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-family-pingfang);
+  --el-font-family: var(--font-family-pingfang);
+}
+
+html, body, button, input, select, textarea, .duozuhu-client, .kiosk-shell, .scene-screen-composed {
+  font-family: var(--font-family-pingfang);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F6F9;
+  color: #1D2129;
+}
+
+/* Arco Design Standard Tokens: Typography & Shadows */
+:root {
+  --arco-shadow-1: 0 2px 5px rgba(0, 0, 0, 0.05);
+  --arco-shadow-2: 0 4px 10px rgba(0, 0, 0, 0.08);
+  --arco-shadow-3: 0 8px 20px rgba(0, 0, 0, 0.12);
+  --arco-shadow-4: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9CDD4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #86909C;
+}
+
+/* ========================================================
+   Element Plus Dialog / Modal Standard Design Token Spec
+   Radius: 4px | Title: 18px 600 | Padding: 16px | Footer gap: 12px
+   Table: Header & Body font 14px | Row height 48px
+   ======================================================== */
+
+/* Element Plus Popover / Notification Overlay Standard Tokens */
+
+/* Element Plus Table Standard Specification */
+
+/* ========================================================
+   Element Plus Button Standard Tokens
+   Large: 40px, Default: 32px, Small: 24px, Radius: 4px
+   Round: 20px, Circle: 50%
+   ======================================================== */
+
+/* ========================================================
+   Element Plus Tag Standard Tokens
+   Large: 32px (radius 4px), Default: 24px (radius 4px)
+   Small: 20px (radius 2px), Font: 12px
+   Light mode with 1px border, 5 Semantic Colors
+   ======================================================== */
+
+/* 1. Primary (品牌蓝) */
+
+/* 2. Success (成功绿) */
+
+/* 3. Info (中性灰) */
+
+/* 4. Warning (警示橙) */
+
+/* 5. Danger (危险红) */
+
+/* Extra extended theme tags */
+
+/* Tag Sizes */
+
+/* ========================================================
+   Element Plus Tabs Standard Tokens
+   Header Height: 40px | Padding: 0 20px | Font: 14px 500
+   Active indicator: 2px solid #165DFF | Bottom line: 2px solid #E5E6EB
+   ======================================================== */
+
+/* Card Style */
+
+/* Capsule Style */
+
+.demo-tabs > .el-tabs__content {
+  padding: 32px;
+  color: #6B778C;
+  font-size: 14px;
+}
+
+/* ========================================================
+   Element Plus Input / Select / Form Control Standard Tokens
+   Large: 40px, Default: 32px, Small: 24px, Radius: 4px
+   ======================================================== */
+
+/* ========================================================
+   Element Plus Checkbox & Radio & Switch Standard Tokens
+   Checkbox radius: 2px | Radio radius: 50%
+   Switch: Large (50x24, dot 20) | Default (40x20, dot 16) | Small (30x16, dot 12)
+   Brand Colors: Active #165DFF | Inactive #C9CDD4
+   ======================================================== */
+
+/* Default Switch (40px x 20px, dot 16px x 16px, offset 2px) */
+
+/* Large Switch (50px x 24px, dot 20px x 20px, offset 2px) */
+
+/* Small Switch (30px x 16px, dot 12px x 12px, offset 2px) */
+
+/* ========================================================
+   Element Plus Badge & Card Standard Tokens
+   Badge radius: 10px, Height: 18px | Card radius: 4px
+   ======================================================== */
+
+/* ========================================================
+   Element Plus Form Item Standard Tokens
+   Margin bottom: 18px
+   ======================================================== */
+
+/* ========================================================
+   Element Plus Pagination Standard Tokens (Unified 32px Height)
+   All items, page-size select, and jumper input strictly 32px
+   ======================================================== */
+
+
+
+
+

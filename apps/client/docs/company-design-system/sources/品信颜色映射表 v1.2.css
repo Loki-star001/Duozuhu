@@ -1,0 +1,277 @@
+:root {
+  --brand: #0468FE;
+  /* Grey / grey */
+  --color-grey-1: #212630;
+  --color-grey-2: #333D4F;
+  --color-grey-3: #525E71;
+  --color-grey-4: #6F7B8D;
+  --color-grey-5: #8B97A6;
+  --color-grey-6: #ACB4BF;
+  --color-grey-7: #CCD0D9;
+  --color-grey-8: #E6E9F0;
+  --color-grey-9: #F2F4F8;
+  --color-grey-10: #F7F8FB;
+  --color-grey-white: #FFFFFF;
+  --color-grey-black: #000000;
+
+  /* 品牌蓝 / brand */
+  --color-brand-1: #F0F5FF;
+  --color-brand-2: #D2E3FF;
+  --color-brand-3: #A5C9FF;
+  --color-brand-4: #72AAFE;
+  --color-brand-5: #3B89FE;
+  --color-brand-6: #0468FE;
+  --color-brand-7: #0456D1;
+  --color-brand-8: #0341A4;
+  --color-brand-9: #033078;
+  --color-brand-10: #021A4B;
+
+  /* AI紫 / ai */
+  --color-ai-1: #F3F1FF;
+  --color-ai-2: #E3DEFF;
+  --color-ai-3: #C8BFFF;
+  --color-ai-4: #AA9BFF;
+  --color-ai-5: #8474FB;
+  --color-ai-6: #6155F5;
+  --color-ai-7: #4D41CB;
+  --color-ai-8: #3A319D;
+  --color-ai-9: #292473;
+  --color-ai-10: #191747;
+
+  /* 危险红 / danger */
+  --color-danger-1: #FFECE9;
+  --color-danger-2: #FCCDC7;
+  --color-danger-3: #FAADA7;
+  --color-danger-4: #F88B86;
+  --color-danger-5: #F56767;
+  --color-danger-6: #F3474C;
+  --color-danger-7: #CD2A35;
+  --color-danger-8: #A21724;
+  --color-danger-9: #780A18;
+  --color-danger-10: #4D010D;
+
+  /* 成功绿 / success */
+  --color-success-1: #E9FEED;
+  --color-success-2: #B3EEBD;
+  --color-success-3: #81DF95;
+  --color-success-4: #55CF74;
+  --color-success-5: #29C355;
+  --color-success-6: #06B63E;
+  --color-success-7: #059C3A;
+  --color-success-8: #048134;
+  --color-success-9: #03672D;
+  --color-success-10: #034E24;
+
+  /* 警告橙 / warning */
+  --color-warning-1: #FFF4E9;
+  --color-warning-2: #FDDEC5;
+  --color-warning-3: #FCC7A3;
+  --color-warning-4: #FAB080;
+  --color-warning-5: #F9955E;
+  --color-warning-6: #F7783C;
+  --color-warning-7: #D15421;
+  --color-warning-8: #A63712;
+  --color-warning-9: #7A2006;
+  --color-warning-10: #4F0F00;
+
+  /* 秋叶橙 / orange */
+  --color-orange-1: #FFF8E9;
+  --color-orange-2: #FEE6BD;
+  --color-orange-3: #FDD290;
+  --color-orange-4: #FCBB63;
+  --color-orange-5: #FCA036;
+  --color-orange-6: #FB850A;
+  --color-orange-7: #D36603;
+  --color-orange-8: #A74A03;
+  --color-orange-9: #7A3202;
+  --color-orange-10: #4E1E01;
+
+  /* 姚黄 / gold */
+  --color-gold-1: #FFFCE9;
+  --color-gold-2: #FCF4C1;
+  --color-gold-3: #FAEA9A;
+  --color-gold-4: #F7DD72;
+  --color-gold-5: #F6CE4C;
+  --color-gold-6: #F3BD26;
+  --color-gold-7: #CB9617;
+  --color-gold-8: #A1700D;
+  --color-gold-9: #764E06;
+  --color-gold-10: #4D2F02;
+
+  /* 菊草绿 / lime */
+  --color-lime-1: #FEFEE9;
+  --color-lime-2: #EEF6BD;
+  --color-lime-3: #DDEE94;
+  --color-lime-4: #CBE56D;
+  --color-lime-5: #B7DD47;
+  --color-lime-6: #A3D723;
+  --color-lime-7: #82B317;
+  --color-lime-8: #62910E;
+  --color-lime-9: #466E07;
+  --color-lime-10: #2C4B02;
+
+  /* 亚特兰 / azure */
+  --color-azure-1: #E9F7FE;
+  --color-azure-2: #C5E7FD;
+  --color-azure-3: #A2D4FB;
+  --color-azure-4: #80C1F9;
+  --color-azure-5: #5DAAF7;
+  --color-azure-6: #3B93F5;
+  --color-azure-7: #256ECC;
+  --color-azure-8: #154DA0;
+  --color-azure-9: #093176;
+  --color-azure-10: #021B4C;
+
+  /* 酱紫 / violet */
+  --color-violet-1: #F5E9FF;
+  --color-violet-2: #DEC1F5;
+  --color-violet-3: #C59BEC;
+  --color-violet-4: #AB78E1;
+  --color-violet-5: #9157D8;
+  --color-violet-6: #7738CF;
+  --color-violet-7: #5821B2;
+  --color-violet-8: #3F1391;
+  --color-violet-9: #29096F;
+  --color-violet-10: #17024E;
+
+  /* 春洋红 / magenta */
+  --color-magenta-1: #FEEBFA;
+  --color-magenta-2: #F4C2EC;
+  --color-magenta-3: #EB9BE1;
+  --color-magenta-4: #E176D8;
+  --color-magenta-5: #D954D1;
+  --color-magenta-6: #D72CD4;
+  --color-magenta-7: #B31DB6;
+  --color-magenta-8: #8D1393;
+  --color-magenta-9: #670B70;
+  --color-magenta-10: #44054D;
+
+  /* 桃之夭 / pink */
+  --color-pink-1: #FEE9F1;
+  --color-pink-2: #FBC6DC;
+  --color-pink-3: #F8A3C8;
+  --color-pink-4: #F581B8;
+  --color-pink-5: #F25EA9;
+  --color-pink-6: #EF3D9D;
+  --color-pink-7: #C92483;
+  --color-pink-8: #9F1568;
+  --color-pink-9: #760A4E;
+  --color-pink-10: #4C0333;
+
+  /* 天光蓝 / cyan */
+  --color-cyan-1: #E5F8FF;
+  --color-cyan-2: #D2F4FF;
+  --color-cyan-3: #A5E8FF;
+  --color-cyan-4: #72DCFE;
+  --color-cyan-5: #3BCEFE;
+  --color-cyan-6: #04C0FE;
+  --color-cyan-7: #00A4DE;
+  --color-cyan-8: #0378A4;
+  --color-cyan-9: #035478;
+  --color-cyan-10: #02304B;
+
+  /* 电光蓝 / accent */
+  --color-accent-1: #EDFFFE;
+  --color-accent-2: #E0FFFC;
+  --color-accent-3: #BDFFF9;
+  --color-accent-4: #98FFF6;
+  --color-accent-5: #51FFF0;
+  --color-accent-6: #04FCE6;
+  --color-accent-7: #00D7C7;
+  --color-accent-8: #00ACA5;
+  --color-accent-9: #036C6E;
+  --color-accent-10: #023C46;
+
+  /* fill */
+  --color-fill-neutral-1: var(--color-grey-10);
+  --color-fill-neutral-2: var(--color-grey-9);
+  --color-fill-neutral-3: var(--color-grey-8);
+  --color-fill-neutral-4: var(--color-grey-7);
+  --color-fill-neutral-5: var(--color-grey-3);
+  --color-fill-neutral-6: var(--color-grey-white);
+  --color-fill-neutral-mask: color-mix(in srgb, var(--color-grey-black) 40%, transparent);
+  --color-fill-neutral-transparent: color-mix(in srgb, var(--color-grey-black) 0%, transparent);
+  --color-fill-brand-1: var(--color-brand-6);
+  --color-fill-brand-2: var(--color-brand-5);
+  --color-fill-brand-3: var(--color-brand-7);
+  --color-fill-brand-4: var(--color-brand-3);
+  --color-fill-brand-5: var(--color-brand-1);
+  --color-fill-brand-6: color-mix(in srgb, var(--color-brand-6) 30%, transparent);
+  --color-fill-ai-1: var(--color-ai-6);
+  --color-fill-ai-2: var(--color-ai-5);
+  --color-fill-ai-3: var(--color-ai-7);
+  --color-fill-ai-4: var(--color-ai-3);
+  --color-fill-ai-5: var(--color-ai-1);
+  --color-fill-danger-1: var(--color-danger-6);
+  --color-fill-danger-2: var(--color-danger-5);
+  --color-fill-danger-3: var(--color-danger-7);
+  --color-fill-danger-4: var(--color-danger-3);
+  --color-fill-success-1: var(--color-success-6);
+  --color-fill-success-2: var(--color-success-5);
+  --color-fill-success-3: var(--color-success-7);
+  --color-fill-success-4: var(--color-success-3);
+  --color-fill-warning-1: var(--color-warning-6);
+  --color-fill-warning-2: var(--color-warning-5);
+  --color-fill-warning-3: var(--color-warning-7);
+  --color-fill-warning-4: var(--color-warning-3);
+
+  /* text */
+  --color-text-neutral-1: var(--color-grey-1);
+  --color-text-neutral-2: var(--color-grey-3);
+  --color-text-neutral-3: var(--color-grey-5);
+  --color-text-neutral-4: var(--color-grey-7);
+  --color-text-neutral-5: var(--color-grey-white);
+  --color-text-brand-1: var(--color-brand-6);
+  --color-text-brand-2: var(--color-brand-5);
+  --color-text-brand-3: var(--color-brand-7);
+  --color-text-brand-4: var(--color-brand-3);
+  --color-text-brand-5: var(--color-brand-1);
+  --color-text-brand-6: color-mix(in srgb, var(--color-brand-6) 30%, transparent);
+  --color-text-ai-1: var(--color-ai-6);
+  --color-text-ai-2: var(--color-ai-5);
+  --color-text-ai-3: var(--color-ai-7);
+  --color-text-ai-4: var(--color-ai-3);
+  --color-text-ai-5: var(--color-ai-1);
+  --color-text-danger-1: var(--color-danger-6);
+  --color-text-danger-2: var(--color-danger-5);
+  --color-text-danger-3: var(--color-danger-7);
+  --color-text-danger-4: var(--color-danger-3);
+  --color-text-success-1: var(--color-success-6);
+  --color-text-success-2: var(--color-success-5);
+  --color-text-success-3: var(--color-success-7);
+  --color-text-success-4: var(--color-success-3);
+  --color-text-warning-1: var(--color-warning-6);
+  --color-text-warning-2: var(--color-warning-5);
+  --color-text-warning-3: var(--color-warning-7);
+  --color-text-warning-4: var(--color-warning-3);
+
+  /* border */
+  --color-border-1: var(--color-grey-9);
+  --color-border-2: var(--color-grey-8);
+  --color-border-3: var(--color-grey-7);
+  --color-border-4: var(--color-grey-5);
+  --color-border-5: var(--color-brand-6);
+  --color-border-6: var(--color-accent-6);
+  --color-border-7: var(--color-danger-6);
+  --color-border-8: var(--color-success-6);
+  --color-border-9: var(--color-warning-6);
+
+  /* bg */
+  --color-bg-1: var(--color-grey-white);
+  --color-bg-2: var(--color-grey-white);
+  --color-bg-3: var(--color-grey-white);
+  --color-bg-4: var(--color-grey-white);
+  --color-bg-5: var(--color-grey-white);
+  --color-bg-white: var(--color-grey-white);
+
+  /* icon */
+  --color-icon-1: var(--color-grey-3);
+  --color-icon-2: var(--color-grey-5);
+  --color-icon-3: var(--color-grey-7);
+  --color-icon-4: var(--color-brand-6);
+  --color-icon-5: var(--color-accent-6);
+  --color-icon-6: var(--color-danger-6);
+  --color-icon-7: var(--color-success-6);
+  --color-icon-8: var(--color-warning-6);
+
+}

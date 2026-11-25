@@ -1,0 +1,84 @@
+/* Vue / Element Plus adaptation of the existing client design tokens.
+   Body scope also reaches teleported dialogs, select lists and messages. */
+body[data-portal="client"]:not(:where([data-scene-presentation], [data-scene-presentation] *)), .duozuhu-client:not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  --el-color-primary: var(--color-brand-6);
+  --el-color-primary-light-3: var(--color-brand-5);
+  --el-color-primary-light-5: var(--color-brand-3);
+  --el-color-primary-light-7: var(--color-brand-3);
+  --el-color-primary-light-8: #dbe9ff;
+  --el-color-primary-light-9: var(--color-brand-1);
+  --el-color-primary-dark-2: var(--color-brand-7);
+  --el-color-success: var(--color-success-6);
+  --el-color-success-light-3: #4dcb6a;
+  --el-color-success-light-5: #80d995;
+  --el-color-success-light-7: var(--color-success-3);
+  --el-color-success-light-8: #d0f5d6;
+  --el-color-success-light-9: var(--color-success-1);
+  --el-color-success-dark-2: #009021;
+  --el-color-warning: var(--color-warning-6);
+  --el-color-warning-light-3: #ffa44d;
+  --el-color-warning-light-5: #ffbe80;
+  --el-color-warning-light-7: var(--color-warning-3);
+  --el-color-warning-light-8: #ffe8c4;
+  --el-color-warning-light-9: var(--color-warning-1);
+  --el-color-warning-dark-2: #cc6400;
+  --el-color-danger: var(--color-danger-6);
+  --el-color-danger-light-3: var(--color-danger-5);
+  --el-color-danger-light-5: #fa9f9f;
+  --el-color-danger-light-7: var(--color-danger-3);
+  --el-color-danger-light-8: #fdd9d3;
+  --el-color-danger-light-9: var(--color-danger-1);
+  --el-color-danger-dark-2: #cb272d;
+  --el-color-error: var(--el-color-danger);
+  --el-text-color-primary: var(--color-grey-1);
+  --el-text-color-regular: var(--color-grey-3);
+  --el-text-color-secondary: var(--color-grey-5);
+  --el-text-color-placeholder: var(--color-grey-5);
+  --el-text-color-disabled: var(--color-grey-7);
+  --el-border-color: var(--color-grey-8);
+  --el-border-color-light: var(--color-grey-8);
+  --el-border-color-lighter: var(--color-grey-9);
+  --el-fill-color-light: var(--color-grey-10);
+  --el-fill-color-lighter: var(--color-grey-10);
+  --el-fill-color-blank: #fff;
+  --el-border-radius-base: 4px;
+  --el-font-size-base: 14px;
+}
+.duozuhu-client .el-input:not(:where([data-scene-presentation], [data-scene-presentation] *)), .duozuhu-client .el-select:not(:where([data-scene-presentation], [data-scene-presentation] *)), .duozuhu-client .el-button:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-dialog .el-button:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client .flex:has(> .el-button + .el-button):not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-dialog .flex:has(> .el-button + .el-button):not(:where([data-scene-presentation], [data-scene-presentation] *)) { column-gap: 12px; }
+.duozuhu-client :is(.flex, .inline-flex) > .el-button + .el-button:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+body[data-portal="client"] .el-dialog :is(.flex, .inline-flex) > .el-button + .el-button:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-left: 0; }
+.duozuhu-client table .el-button.is-link:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 24px; padding: 0 8px; font-size: 14px; }
+.duozuhu-client .client-knowledge-table:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 100%; min-width: 1040px; table-layout: fixed; }
+.duozuhu-client .client-knowledge-table th:not(:where([data-scene-presentation], [data-scene-presentation] *)) { white-space: nowrap; }
+.duozuhu-client .client-knowledge-table td:not(:where([data-scene-presentation], [data-scene-presentation] *)) { white-space: nowrap; }
+body[data-portal="client"] .el-dialog:not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  --el-dialog-padding-primary: 16px;
+  --el-dialog-border-radius: 4px;
+  --el-dialog-title-font-size: 18px;
+  max-width: calc(100vw - 32px);
+}
+body[data-portal="client"] .el-dialog__footer > .flex:not(:where([data-scene-presentation], [data-scene-presentation] *)) { gap: 12px; }
+.client-recharge-tabs { height: 40px; gap: 24px; border-bottom: 1px solid var(--color-grey-8); }
+.client-recharge-tabs > button { height: 40px; padding: 0 4px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; font-size: 14px; box-shadow: none; color: var(--color-grey-3); }
+.client-recharge-tabs > button[class*="border-[color:var(--color-border-2)]"] { border-bottom-color: var(--color-brand-6); color: var(--color-brand-6); }
+.client-recharge-amounts { gap: 12px; }
+.client-recharge-amounts > button { height: 32px; padding: 0 12px; border: 1px solid var(--color-grey-8); border-radius: 4px; background: #fff; color: var(--color-grey-3); font-size: 14px; }
+.client-recharge-amounts > button:hover { border-color: var(--color-brand-3); color: var(--color-brand-6); background: var(--color-brand-1); }
+.client-recharge-amounts > button[class*="bg-[color:var(--color-grey-1)]"] { background: var(--color-brand-6); color: #fff; border-color: var(--color-brand-6); }
+.client-recharge-method { border-color: var(--color-brand-6); background: var(--color-brand-1); }
+.client-recharge-method > span { background: var(--color-brand-6); }
+.client-payment-submit { min-height: 32px; background: var(--color-brand-6); border: 1px solid var(--color-brand-6); font-size: 14px; }
+.client-payment-submit:hover { background: var(--color-brand-5); border-color: var(--color-brand-5); }
+.client-payment-submit:disabled { background: var(--color-brand-3); border-color: var(--color-brand-3); cursor: not-allowed; }
+body[data-portal="client"] .client-danger-confirm:not(:where([data-scene-presentation], [data-scene-presentation] *)) { --el-button-bg-color: var(--color-danger-6); --el-button-border-color: var(--color-danger-6); --el-button-hover-bg-color: var(--color-danger-5); --el-button-hover-border-color: var(--color-danger-5); }
+.client-recharge-dialog .text-xs.font-semibold { font-size: 14px; }
+.client-device-settings-grid .client-voice-options { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.client-device-settings-grid > .client-control-panel { min-width: 0; }
+.client-device-settings-grid .client-control-content > div > div:first-child { font-size: 16px; }
+@media (max-width: 1100px) {
+  .client-device-settings-grid .client-voice-options { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+

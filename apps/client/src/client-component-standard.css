@@ -1,0 +1,79 @@
+/* Visual-only adjustments for the existing customer portal.
+   Keep all labels, data fields, actions and navigation in their original components. */
+.duozuhu-client:not(:where([data-scene-presentation], [data-scene-presentation] *)) {
+  --client-primary: var(--color-brand-6);
+  --client-border: var(--color-grey-8);
+  --client-text: var(--color-grey-1);
+  --client-secondary-text: var(--color-grey-3);
+  --client-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.duozuhu-client > header:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 60px; background-color: #fff; border-bottom: 1px solid var(--client-border); }
+.duozuhu-client aside:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 224px; background-color: #fff; border-right: 1px solid var(--client-border); }
+.duozuhu-client aside > div > .p-3:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 12px; }
+.duozuhu-client aside > div > .p-3 > button:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client aside > div > .p-3 > .space-y-1 > div:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 56px; font-size: 14px; border-radius: 4px; }
+.duozuhu-client aside .border-l button:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 40px; font-size: 14px; border-radius: 4px; }
+.duozuhu-client nav:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 56px; background: #fff; }
+.duozuhu-client .client-settings-list:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex: 0 0 22%; width: 22%; min-width: 220px; max-width: none; padding: 16px; }
+.duozuhu-client main [class*="shadow-"]:not(:where([data-scene-presentation], [data-scene-presentation] *)) { box-shadow: none; }
+.duozuhu-client main button:focus-visible:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client aside button:focus-visible:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client nav button:focus-visible:not(:where([data-scene-presentation], [data-scene-presentation] *)) { outline: 2px solid var(--color-brand-6); outline-offset: 2px; }
+.duozuhu-client table:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-collapse: collapse; }
+.duozuhu-client table th:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client table td:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 48px; font-size: 14px !important; padding-top: 8px; padding-bottom: 8px; }
+.duozuhu-client table th:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: var(--color-grey-10); color: var(--color-grey-3); font-weight: 500; }
+.duozuhu-client table td > div:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client table td > span:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client table tbody tr:hover:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background-color: #f7faff; }
+.duozuhu-client footer:not(.el-dialog__footer):not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-height: 56px; height: 56px; background: #fff; border-top: 1px solid var(--client-border); }
+.duozuhu-client footer:not(.el-dialog__footer) > div:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client main label:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client .client-persona-content:not(:where([data-scene-presentation], [data-scene-presentation] *)) { min-width: 0; padding: 24px; background: var(--color-grey-10); }
+.duozuhu-client .client-persona-form:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 100%; min-width: 0; max-width: none; padding: 20px; border: 1px solid var(--color-grey-8); border-radius: 4px; background: #fff; }
+.duozuhu-client .client-persona-form textarea:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; line-height: 1.6; height: clamp(320px, calc(100vh - 310px), 640px); resize: vertical; }
+.duozuhu-client .client-persona-form > .mt-6:not(:where([data-scene-presentation], [data-scene-presentation] *)) { justify-content: flex-end; margin-top: 20px; }
+.duozuhu-client .client-persona-form > .mb-7:not(:where([data-scene-presentation], [data-scene-presentation] *)) { margin-bottom: 20px; }
+.duozuhu-client .client-scene-properties:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex: 0 0 44%; width: 44%; min-width: 280px; max-width: none; padding: 20px; }
+.duozuhu-client .client-scene-properties > .bg-white.border:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 20px; }
+.duozuhu-client .client-scene-properties > .bg-white.border > div:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 16px; font-weight: 500; }
+.duozuhu-client .client-scene-properties button.h-7:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-scene-properties button.h-9:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 32px; font-size: 14px; }
+.duozuhu-client .client-scene-preview-pane:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex: 1 1 56%; min-width: 0; }
+.duozuhu-client .client-control-panel:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-device-config:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; background: var(--color-grey-10); }
+.duozuhu-client .client-control-content:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-device-config-content:not(:where([data-scene-presentation], [data-scene-presentation] *)) { width: 100%; min-width: 0; max-width: none; }
+.duozuhu-client .client-control-content > div:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-device-config-content > div:not(:first-child):not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 20px; border: 1px solid var(--color-grey-8); border-radius: 4px; background: #fff; }
+.duozuhu-client .client-control-content > div > div:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 16px; color: var(--color-grey-1); text-align: left; font-weight: 500; }
+.duozuhu-client .client-control-content > div .border.bg-white:not(:where([data-scene-presentation], [data-scene-presentation] *)) { border-color: var(--color-grey-8); }
+.duozuhu-client .client-control-content button span.text-xs:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client .client-device-config-content h3:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 16px; font-weight: 500; }
+.duozuhu-client .client-device-config-content > div .h-8:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client .client-greetings-body:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; background: var(--color-grey-10); }
+.duozuhu-client .client-greetings-body > div > .h-10 span:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client .client-greetings-body input[type="text"]:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 14px; }
+.duozuhu-client .client-greetings-tabs:not(:where([data-scene-presentation], [data-scene-presentation] *)) { gap: 16px; border-bottom-color: var(--color-grey-8); }
+.duozuhu-client .client-greetings-tabs > div:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 100%; border: 0; border-radius: 0; gap: 20px; overflow: visible; }
+.duozuhu-client .client-greetings-tabs button:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: 56px; padding: 0; border-left: 0; border-bottom: 2px solid transparent; background: transparent; font-size: 14px; color: var(--color-grey-3); white-space: nowrap; }
+.duozuhu-client .client-greetings-tabs button[class*="bg-[color:var(--color-fill-brand-1)]"]:not(:where([data-scene-presentation], [data-scene-presentation] *)) { background: transparent; color: var(--color-brand-6); border-bottom-color: var(--color-brand-6); }
+.duozuhu-client .client-greetings-tabs > span:not(:where([data-scene-presentation], [data-scene-presentation] *)) { font-size: 13px; white-space: nowrap; }
+.duozuhu-client .client-device-settings-panel:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 24px; background: var(--color-grey-10); }
+.duozuhu-client .client-device-settings-grid:not(:where([data-scene-presentation], [data-scene-presentation] *)) { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; }
+.duozuhu-client .client-device-settings-grid > .client-control-panel:not(:where([data-scene-presentation], [data-scene-presentation] *)),
+.duozuhu-client .client-device-settings-grid > .client-device-config:not(:where([data-scene-presentation], [data-scene-presentation] *)) { padding: 0; min-width: 0; overflow: visible; }
+.duozuhu-client .client-device-settings-grid .client-control-content .grid-cols-3:not(:where([data-scene-presentation], [data-scene-presentation] *)) { gap: 12px; }
+@media (max-width: 1100px) {
+  .duozuhu-client .client-device-settings-grid:not(:where([data-scene-presentation], [data-scene-presentation] *)) { grid-template-columns: minmax(0, 1fr); }
+  .duozuhu-client .client-settings-list:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex-basis: 22%; min-width: 200px; }
+  .duozuhu-client .client-scene-layout:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex-direction: column; overflow-y: auto; }
+  .duozuhu-client .client-scene-preview-pane:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex: 0 0 420px; width: 100%; height: 420px; min-height: 420px; border-right: 0; border-bottom: 1px solid var(--color-grey-8); }
+  .duozuhu-client .client-scene-properties:not(:where([data-scene-presentation], [data-scene-presentation] *)) { flex: 0 0 auto; width: 100%; min-width: 0; height: auto; overflow-y: visible; }
+}
+@media (max-width: 900px) {
+  .duozuhu-client .client-greetings-tabs:not(:where([data-scene-presentation], [data-scene-presentation] *)) { height: auto; min-height: 56px; flex-wrap: wrap; gap: 0; padding-bottom: 8px; }
+  .duozuhu-client .client-greetings-tabs > div:first-child:not(:where([data-scene-presentation], [data-scene-presentation] *)) { gap: 16px; }
+}
